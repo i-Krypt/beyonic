@@ -1,0 +1,45 @@
+<div>
+  <h3 class="mb-2 text-sm">Recent Transactions</h3>
+  <app-transaction-empty-state
+    *ngIf="transactions.length == 0"
+  ></app-transaction-empty-state>
+</div>
+<table class="table-auto transactions-table w-full">
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>
+        <div
+          class="flex w-10 h-10 justify-center  items-center bg-brand-blue-lightest text-brand-blue-lighter rounded-full"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td>
+        <div class="text-base capitalize">{{ transaction?.name }}</div>
+        <div class="font-semibold ">
+          <span class="uppercase tracking-wide mr-1">{{ transaction?.currency }}</span
+          >{{ transaction?.amount }}
+        </div>
+      </td>
+      <td class="text-sm">
+        {{ transaction?.status }}
+      </td>
+      <td class="text-sm" align="right">20m</td>
+    </tr>
+  </tbody>
+</table>

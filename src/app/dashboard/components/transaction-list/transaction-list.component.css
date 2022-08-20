@@ -1,0 +1,11 @@
+.transactions-table td {
+    vertical-align: top;
+}
+.transactions-table {
+    border-collapse: separate;
+    border-spacing: 0 24px;
+}
+
+.transactions-table  tr {
+   border: thin solid;
+}

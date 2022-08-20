@@ -1,0 +1,7 @@
+.dot {
+  @apply w-3 h-3 rounded-full bg-gray-300;
+}
+
+.dot.active {
+  @apply w-3 h-3 rounded-full bg-semantic-green;
+}
