@@ -20,6 +20,7 @@ import { TransactionListItemComponent } from './components/transaction-list-item
   imports: [
     CommonModule,
     DashboardRoutingModule
-  ]
+  ],
+  exports: []
 })
 export class DashboardModule { }

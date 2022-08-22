@@ -14,6 +14,11 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
   imports: [
     CommonModule,
     LayoutRoutingModule
+  ],
+  exports: [
+    SidebarComponent,
+    MainMenuComponent
+
   ]
 })
 export class LayoutModule { }
