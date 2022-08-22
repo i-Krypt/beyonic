@@ -41,9 +41,14 @@ export class HomepageComponent implements OnInit {
     }  
   ]
 
+  display = false;
 
   ngOnInit(): void {
     // this.sanitizer.bypassSecurityTrustHtml('svg');
+  }
+
+  onPress() {
+    this.display = !this.display;
   }
 
 }
