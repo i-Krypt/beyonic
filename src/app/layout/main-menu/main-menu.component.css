@@ -1,0 +1,17 @@
+.mobile-menu {
+}
+
+.mobile-menu .menu-item {
+    @apply text-slate-700;
+}
+.mobile-menu .menu-item.active {
+    @apply text-brand-blue-lighter;
+}
+
+.sidebar-menu li.active a {
+    @apply block w-full items-center space-x-3 flex bg-gray-100 font-semibold text-brand-blue-lighter border-l-[8px] pl-1 border-brand-blue-lighter py-3;
+}
+
+.sidebar-menu li a {
+    @apply block w-full items-center space-x-3 flex  border-l-[8px] pl-1 border-transparent py-3;
+}
